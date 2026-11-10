@@ -1,6 +1,72 @@
 <!DOCTYPE html>
-<html lang="es" lang="en">
-  <head>
-    
-  </head>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nexus × Server12</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link id="favicon" rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌐</text></svg>" />
+</head>
+<body>
+  <div class="bg-grid"></div>
+
+  <header>
+    <nav>
+      <div class="logo">NEXUS<span>×</span>S12</div>
+      <ul class="nav-links">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#acceso">Acceso</a></li>
+        <li><a href="#acerca">Acerca de</a></li>
+      </ul>
+      <button id="cloakBtn" class="btn-ghost" title="Cambiar pestaña (disimular)">🎭 Cloak</button>
+    </nav>
+  </header>
+
+  <main>
+    <section id="inicio" class="hero">
+      <h1>Libera tu <span class="grad">navegación</span></h1>
+      <p class="subtitle">
+        Colaboración entre <a href="https://nexus-is.onthewifi.com" target="_blank" rel="noopener">Nexus</a>
+        y <strong>Server12</strong> — dos proyectos dedicados a sortear bloqueos de sitios web.
+      </p>
+      <div class="status">
+        <span class="dot"></span> Server12: <em>en construcción</em> · Nexus: <em>activo</em>
+      </div>
+    </section>
+
+    <section id="acceso" class="panel">
+      <h2>Acceso rápido</h2>
+      <form id="proxyForm" autocomplete="off">
+        <input id="urlInput" type="text" placeholder="Escribe una URL (ej. ejemplo.com) o busca en Google…" />
+        <button type="submit">Abrir →</button>
+      </form>
+      <p class="hint">Consejo: pulsa <kbd>Esc</kbd> para redirigir rápido a Google Classroom (tecla de pánico).</p>
+
+      <div class="links">
+        <a class="card" href="https://nexus-is.onthewifi.com" target="_blank" rel="noopener">
+          <h3>🌌 Nexus</h3>
+          <p>Sitio principal de la colaboración. Activo ahora.</p>
+        </a>
+        <a class="card soon" href="#" onclick="return false;">
+          <h3>🖥️ Server12</h3>
+          <p>Próximamente. El nuevo proyecto está en desarrollo.</p>
+        </a>
+      </div>
+    </section>
+
+    <section id="acerca" class="panel">
+      <h2>Acerca de</h2>
+      <p>
+        Nexus y Server12 unen fuerzas para ofrecer acceso libre a la web.
+        Este sitio es el punto de encuentro de ambos proyectos.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Nexus × Server12 — Hecho con 💜</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
 </html>
